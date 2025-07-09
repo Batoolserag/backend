@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Global Public Speaking Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/css.css" />
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: white;
+            color: #bfdbfe; /* Tailwind gray-800 */
+        }
+
+        .header-bg {
+            background-color: #bfdbfe; /* Tailwind blue-200 */
+        }
+
+        nav a.nav-link {
+            margin-right: 1rem;
+        }
+
+        nav a.login, nav a.register {
+            margin-left: 1rem;
+            font-weight: 600;
+            color: #1e40af;
+        }
+
+        .main-section {
+            max-width: 900px;
+            margin: 2rem auto;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+            .main-section img {
+                width: 260px;
+                height: 200px;
+                object-fit: contain;
+                border-radius: 0.5rem;
+                box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+            }
+
+        .info h2 {
+            font-weight: 700;
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+            color: #1e40af;
+        }
+
+        .info p {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .info button {
+            background-color: #bfdbfe; /* Tailwind blue-600 */
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 1rem 0;
+        }
+
+            .info button:hover {
+                background-color: #bfdbfe; /* Tailwind blue-700 */
+            }
+
+        .topics {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+            .topics h3 {
+                font-weight: 700;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #1e40af;
+            }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            display: block;
+            background: #f9fafb;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+            .card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 6px 15px rgb(0 0 0 / 0.15);
+            }
+
+            .card img {
+                width: 100%;
+                height: 160px;
+                object-fit: cover;
+                display: block;
+            }
+
+        .content {
+            padding: 1rem;
+        }
+
+            .content h4 {
+                font-weight: 700;
+                margin-bottom: 0.3rem;
+                color: #1e40af;
+            }
+
+            .content p {
+                font-size: 0.95rem;
+                margin-bottom: 0.5rem;
+                color: #374151;
+            }
+
+            .content span {
+                font-size: 0.85rem;
+                color: #6b7280;
+            }
+
+        footer {
+            background-color: #bfdbfe;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem 1rem;
+            gap: 2rem;
+            font-size: 0.875rem;
+            color: #1e40af;
+        }
+
+        .footer-section {
+            flex: 1 1 220px;
+            max-width: 300px;
+        }
+
+            .footer-section h4 {
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+
+            .footer-section em {
+                font-style: italic;
+                color: #374151;
+            }
+
+            .footer-section a {
+                display: block;
+                margin-bottom: 0.3rem;
+                color: #1e40af;
+                text-decoration: none;
+            }
+
+                .footer-section a:hover {
+                    text-decoration: underline;
+                }
+
+        .logo {
+            margin-top: 1rem;
+            max-width: 150px;
+        }
+
+        .social-icons {
+            margin-top: 0.5rem;
+        }
+
+            .social-icons span {
+                font-weight: 600;
+                display: block;
+                margin-bottom: 0.5rem;
+            }
+
+            .social-icons a {
+                margin-right: 0.5rem;
+                display: inline-block;
+            }
+
+            .social-icons img {
+                width: 24px;
+                height: 24px;
+            }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="header-bg py-4 px-6 flex justify-between items-center">
+        <h1 class="text-lg font-bold text-black">Global Public Speaking Club</h1>
+        <nav class="flex items-center text-sm font-semibold text-black">
+            <a href="index.html" class="nav-link hover:underline">Home</a>
+            <a href="about.html" class="nav-link hover:underline">About</a>
+            <a href="latest_news.html" class="nav-link hover:underline">Activities</a>
+            <a href="resources.html" class="nav-link hover:underline">Resources</a>
+            <a href="community.html" class="nav-link hover:underline">Community</a>
+            <a href="login.html" class="login hover:underline">Login</a>
+            <a href="register.html" class="register hover:underline ml-4">Register</a>
+            <button class="flag-btn ml-3">
+                <img src="https://flagcdn.com/w40/us.png" alt="US Flag" class="w-6 h-4" />
+            </button>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <img src="https://static.wixstatic.com/media/120293_c53d89e528854d4ab71be8a07063f94a~mv2.png/v1/fill/w_264,h_199,fp_0.50_0.50,q_95,enc_avif,quality_auto/120293_c53d89e528854d4ab71be8a07063f94a~mv2.webp" alt="Weekly Discussion Main" />
+        <div class="info">
+            <h2>Weekly Discussion: Overcoming Stage Fright</h2>
+            <p><strong>Community Forum</strong></p>
+            <p>June 10, 2024</p>
+            <p>Join fellow speakers as they share their personal experiences and proven strategies for conquering presentation anxiety. This week's discussion features tips from both beginners and seasoned speakers.</p>
+            <button>Join Discussion</button>
+            <p><strong>47 active members</strong></p>
+        </div>
+    </section>
+
+    <section class="topics">
+        <h3>Related Community Topics</h3>
+        <div class="cards" id="topics-container"></div>
+    </section>
+
+    <footer>
+        <div class="footer-section">
+            <h4>Global Public Speaking Club</h4>
+            <em>Empowering voices. Connecting the world.</em>
+            <img class="logo" src="https://i.imghippo.com/files/pwO2415cdc.png" alt="GPS Club Logo" />
+        </div>
+        <div class="footer-section" style="text-align:center;">
+            <h4>Quick Links</h4>
+            <a href="#">About</a>
+            <a href="#">Activities</a>
+            <a href="#">Resources</a>
+            <a href="#">Community</a>
+        </div>
+        <div class="footer-section contact">
+            <h4>Contact Us</h4>
+            <p>Email: support@gpsclub.org</p>
+            <p>Location: 26 Voice Tower, Innovation Park,<br />Dubai Knowledge Village, UAE</p>
+            <p>Phone: +971 4 123 4567</p>
+            <p>Support Hours: Sunday – Thursday, 9:00 AM – 5:00 PM</p>
+            <div class="social-icons">
+                <span>Stay Connected</span>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" /></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" /></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" /></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        async function loadTopics() {
+            try {
+                const response = await fetch('/api/topics'); // adjust URL if needed
+                if (!response.ok) throw new Error('Failed to fetch topics');
+
+                const topics = await response.json();
+                const container = document.getElementById('topics-container');
+                container.innerHTML = '';
+
+                topics.forEach(topic => {
+                    const card = document.createElement('a');
+                    card.href = '#'; // update if you have real links
+                    card.className = 'card';
+
+                    card.innerHTML = `
+                <img src="${topic.imageUrl}" alt="${topic.title}" />
+                <div class="content">
+                  <h4>${topic.title}</h4>
+                  <p>${topic.description}</p>
+                  <span>${topic.posts} posts</span>
+                </div>
+              `;
+
+                    container.appendChild(card);
+                });
+            } catch (error) {
+                console.error('Error loading topics:', error);
+                const container = document.getElementById('topics-container');
+                container.innerHTML = `<p style="color:red;">Failed to load topics.</p>`;
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', loadTopics);
+    </script>
+
+</body>
+</html>

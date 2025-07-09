@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Public Speaking Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css" />
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="header-bg py-4 px-6 flex justify-between items-center">
+        <h1 class="text-lg font-bold text-black">Global Public Speaking Club</h1>
+        <nav class="flex items-center text-sm font-semibold text-black">
+            <a href="index.html" class="nav-link hover:underline">Home</a>
+            <a href="about.html" class="nav-link hover:underline">About</a>
+            <a href="latest_news.html" class="nav-link hover:underline">Activities</a>
+            <a href="resources.html" class="nav-link hover:underline">Resources</a>
+            <a href="community.html" class="nav-link hover:underline">Community</a>
+            <a href="login.html" class="login">Login</a>
+            <a href="register.html" class="register">Register</a>
+            <button class="flag-btn ml-3">
+                <img src="https://flagcdn.com/w40/us.png" alt="US Flag" class="w-6 h-4" />
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Speaking Resources Hub</h1>
+            <p>Everything you need to master the art of public speaking</p>
+        </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section class="resources">
+        <div class="resource-card">
+            <h2>Complete Speaking Guides</h2>
+            <p>Step-by-step guides covering speech structure, delivery techniques, and presentation mastery</p>
+            <button>View Guides</button>
+        </div>
+        <img src="images/book.png" alt="Books" />
+    </section>
+
+    <!-- Workshops Section -->
+    <section class="resources">
+        <div class="resource-card">
+            <h2>Expert Workshop Library</h2>
+            <p>Access recorded sessions from our top workshops on voice modulation, storytelling, and persuasion</p>
+            <button>Watch Videos</button>
+        </div>
+        <img src="https://www.stereophile.com/images/styles/600_wide/public/719backpage.promo_.jpg" alt="picture" />
+    </section>
+
+    <hr />
+
+    <!-- Tutorials Section -->
+    <section class="tutorials">
+        <div class="tutorials-content-wrapper">
+            <h2>Step-by-Step Tutorials</h2>
+
+            <div class="tutorial-layout">
+                <!-- Left column with two smaller tutorials -->
+                <div class="left-column">
+                    <!-- Tutorial Card 2 -->
+                    <div class="tutorial">
+                        <div class="tutorial-img" style="background-image: url('https://miro.medium.com/v2/1*v4Tq51C48FwTJ51wdDXK4g.jpeg');"></div>
+                        <div class="tutorial-info">
+                            <h3>Voice Projection & Modulation</h3>
+                            <p>Master breathing techniques and vocal variety</p>
+                            <span>20 min course | Intermediate</span>
+                            <button>Start Tutorial</button>
+                        </div>
+                    </div>
+
+                    <!-- Tutorial Card 3 -->
+                    <div class="tutorial">
+                        <div class="tutorial-img" style="background-image: url('https://images.stockcake.com/public/2/f/9/2f90dcf6-c181-4537-85e1-6c5c6378fe40_large/confident-speaker-performing-stockcake.jpg');"></div>
+                        <div class="tutorial-info">
+                            <h3>Overcoming Stage Fright</h3>
+                            <p>Proven strategies to build confidence and calm nerves</p>
+                            <span>15 min course | All Levels</span>
+                            <button>Start Tutorial</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right column with one large tutorial -->
+                <div class="right-column">
+                    <div class="tutorial large-tutorial">
+                        <div class="tutorial-img" style="background-image: url('https://www.eventi.polimi.it/wp-content/uploads/2024/07/AdobeStock_283017482_800x600.jpg');"></div>
+                        <div class="tutorial-info">
+                            <h3>Complete Speech Structure Mastery</h3>
+                            <p>Learn the foundation of powerful presentations - from captivating openings to memorable conclusions</p>
+                            <span>45 min course | Beginner</span>
+                            <button>Start Tutorial</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="faq-wrapper">
+            <ul class="faq-list">
+                <li class="faq-item active" onclick="showAnswer(0)">
+                    <span class="dot"></span>
+                    <span class="question">What is a Payment Gateway?</span>
+                    <span class="arrow">›</span>
+                </li>
+                <li class="faq-item" onclick="showAnswer(1)">
+                    <span class="dot"></span>
+                    <span class="question">Do I need to pay to Instapay even when there is no transaction going on in my business?</span>
+                    <span class="arrow">›</span>
+                </li>
+                <li class="faq-item" onclick="showAnswer(2)">
+                    <span class="dot"></span>
+                    <span class="question">What platforms does Instapay payment gateway support?</span>
+                    <span class="arrow">›</span>
+                </li>
+                <li class="faq-item" onclick="showAnswer(3)">
+                    <span class="dot"></span>
+                    <span class="question">Does Instapay provide international payments support?</span>
+                    <span class="arrow">›</span>
+                </li>
+                <li class="faq-item" onclick="showAnswer(4)">
+                    <span class="dot"></span>
+                    <span class="question">Is there any setup fee or annual maintainance fee that I need to pay regularly?</span>
+                    <span class="arrow">›</span>
+                </li>
+            </ul>
+
+            <div class="faq-answer">
+                <h3 id="faq-title">What is a Payment Gateway?</h3>
+                <p id="faq-text">
+                    A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses.
+                    Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks,
+                    card associations and online wallet players.<br /><br />
+                    Payment gateways play a vital role in the online transaction process, which is the realisation of value, and hence
+                    are seen as an important pillar of ecommerce.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-section">
+            <h4>Global Public Speaking Club</h4>
+            <em>Empowering voices. Connecting the world.</em>
+            <img class="logo" src="https://i.imghippo.com/files/pwO2415cdc.png" alt="GPS Club Logo" />
+        </div>
+        <div class="footer-section" style="text-align:center;">
+            <h4>Quick Links</h4>
+            <a href="about.html">About</a>
+            <a href="latest_news.html">Activities</a>
+            <a href="resources.html">Resources</a>
+            <a href="community.html">Community</a>
+        </div>
+
+        <div class="footer-section contact">
+            <h4>Contact Us</h4>
+            <p>Email: support@gpsclub.org</p>
+            <p>Location: 26 Voice Tower, Innovation Park,<br />Dubai Knowledge Village, UAE</p>
+            <p>Phone: +971 4 123 4567</p>
+            <p>Support Hours: Sunday – Thursday, 9:00 AM – 5:00 PM</p>
+            <div class="social-icons">
+                <span>Stay Connected</span>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" /></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" /></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" /></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showAnswer(index) {
+            // Remove active class from all items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Add active class to clicked item
+            document.querySelectorAll('.faq-item')[index].classList.add('active');
+
+            // Update the answer content based on index
+            const titles = [
+                "What is a Payment Gateway?",
+                "Do I need to pay to Instapay even when there is no transaction going on in my business?",
+                "What platforms does Instapay payment gateway support?",
+                "Does Instapay provide international payments support?",
+                "Is there any setup fee or annual maintainance fee that I need to pay regularly?"
+            ];
+
+            const answers = [
+                "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.<br /><br />Payment gateways play a vital role in the online transaction process, which is the realisation of value, and hence are seen as an important pillar of ecommerce.",
+                "No, you don't need to pay anything to Instapay when there are no transactions. Our pricing model is transaction-based, meaning you only pay when you actually process payments through our gateway.",
+                "Instapay payment gateway supports multiple platforms including web applications, mobile apps, e-commerce platforms like Shopify, WooCommerce, Magento, and custom integrations through our comprehensive API.",
+                "Yes, Instapay provides comprehensive international payment support with multi-currency processing, supporting major international credit cards, digital wallets, and local payment methods across different countries.",
+                "No, there are no setup fees or annual maintenance fees. Instapay follows a transparent, transaction-based pricing model where you only pay a small percentage per successful transaction."
+            ];
+
+            document.getElementById('faq-title').textContent = titles[index];
+            document.getElementById('faq-text').innerHTML = answers[index];
+        }
+    </script>
+</body>
+</html>

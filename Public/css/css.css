@@ -1,0 +1,608 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link:not(:last-child)::after {
+    content: '|';
+    margin-left: 8px;
+    margin-right: 8px;
+    color: black;
+}
+
+.login-container {
+    background-color: #C6DEF1;
+    border: 4px solid #FCD34D;
+    box-shadow: 0 4px 6px -1px rgba(251, 191, 36, 0.5), 0 2px 4px -1px rgba(251, 191, 36, 0.5);
+    border-radius: 20px;
+}
+
+.login-input {
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 14px;
+    width: 100%;
+    background-color: white;
+}
+
+.login-label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.toggle-button {
+    background-color: #fbbf24;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 0;
+    border-radius: 40px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.signin-button {
+    background-color: #fbbf24;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 0;
+    border-radius: 40px;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.forgot-password {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+    color: black;
+}
+
+.header-bg {
+    background-color: #cce6ff;
+}
+
+footer {
+    background-color: #cce6ff;
+    padding: 30px 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    font-size: 0.95rem;
+    color: #1f2937;
+}
+
+.footer-section h4 {
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.footer-section p, .footer-section a {
+    color: #374151;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.footer-section em {
+    display: block;
+    margin-top: 8px;
+    color: #555;
+}
+
+.footer-section.contact p {
+    font-style: italic;
+}
+
+.social-icons {
+    margin-top: 12px;
+}
+
+    .social-icons span {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+    }
+
+    .social-icons a {
+        margin-right: 10px;
+        display: inline-block;
+        background-color: transparent;
+    }
+
+    .social-icons img {
+        width: 28px;
+        height: 28px;
+        filter: grayscale(100%);
+    }
+
+.google-btn {
+    transition: all 0.3s ease;
+}
+
+    .google-btn:hover {
+        background-color: #f1f1f1;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+        .google-btn:hover img {
+            transform: scale(1.1);
+        }
+
+    .google-btn img {
+        transition: transform 0.3s ease;
+    }
+
+.flag-btn {
+    transition: all 0.3s ease;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+    .flag-btn:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+        .flag-btn:hover img {
+            transform: scale(1.05);
+        }
+
+    .flag-btn img {
+        transition: transform 0.3s ease;
+    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav a.login {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+nav a.register {
+    background-color: #facc15;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+body {
+    background-color: #fff;
+    color: #111827;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #cce6ff;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    background-image: url('https://img.freepik.com/premium-photo/engaging-interview-conversation-stage-with-microphones_274679-56414.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: white;
+    padding: 0 20px;
+}
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 1;
+    }
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 2rem;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.resources {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 5%;
+    gap: 3rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resource-card {
+    flex: 1;
+    max-width: 500px;
+}
+
+    .resource-card h2 {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .resource-card p {
+        color: #666;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .resource-card button {
+        background-color: #d4ecff;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+    }
+
+        .resource-card button:hover {
+            background-color: #b3d9ff;
+        }
+
+.resources img {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.tutorials {
+    background: white;
+    padding: 3rem 2rem;
+}
+
+.tutorials-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tutorials h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.tutorial-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.right-column {
+    flex: 1;
+    display: flex;
+}
+
+.tutorial {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1;
+}
+
+.tutorial-img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0f0;
+}
+
+.large-tutorial .tutorial-img {
+    height: 600px;
+}
+
+.tutorial-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+    .tutorial-info h3 {
+        color: #000;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
+    }
+
+.large-tutorial h3 {
+    font-size: 1.4rem;
+}
+
+.tutorial-info p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.large-tutorial p {
+    font-size: 1.05rem;
+}
+
+.tutorial-info span {
+    font-size: 0.85rem;
+    color: #666;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.tutorial-info button {
+    padding: 0.8rem 2rem;
+    background-color: #cce6ff;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.large-tutorial button {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+.tutorial-info button:hover {
+    background-color: #b3d9ff;
+}
+
+.faq {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+    .faq h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+        color: #1e1e1e;
+    }
+
+.faq-wrapper {
+    display: flex;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #f9f8ff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.faq-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    background-color: #ffffff;
+}
+
+.faq-item {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+    .faq-item:hover {
+        background-color: #f5f3ff;
+    }
+
+    .faq-item.active {
+        background-color: #f5f3ff;
+    }
+
+    .faq-item .dot {
+        width: 14px;
+        height: 14px;
+        background: #c4b5fd;
+        border-radius: 50%;
+        margin-right: 12px;
+        flex-shrink: 0;
+    }
+
+    .faq-item .question {
+        flex-grow: 1;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #1e1e1e;
+    }
+
+    .faq-item .arrow {
+        font-size: 1.2rem;
+        color: #999;
+        margin-left: 10px;
+    }
+
+.faq-answer {
+    width: 55%;
+    background-color: #f9f8ff;
+    padding: 2rem;
+    border-left: 1px solid #e4e2f0;
+}
+
+    .faq-answer h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #1e1e1e;
+    }
+
+    .faq-answer p {
+        font-size: 0.95rem;
+        color: #555;
+        line-height: 1.6;
+    }
+
+footer {
+    background-color: #cce6ff;
+    padding: 30px 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    font-size: 0.95rem;
+    color: #1f2937;
+}
+
+.footer-section h4 {
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.footer-section p, .footer-section a {
+    color: #374151;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.footer-section em {
+    display: block;
+    margin-top: 8px;
+    color: #555;
+}
+
+.footer-section.contact p {
+    font-style: italic;
+}
+
+.social-icons {
+    margin-top: 12px;
+}
+
+    .social-icons span {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+    }
+
+    .social-icons a {
+        margin-right: 10px;
+        display: inline-block;
+        background-color: transparent;
+    }
+
+    .social-icons img {
+        width: 28px;
+        height: 28px;
+        filter: grayscale(100%);
+    }
+
+.logo {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .resources {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .tutorial-layout {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        white-space: normal;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .faq-wrapper {
+        flex-direction: column;
+    }
+
+    .faq-list,
+    .faq-answer {
+        width: 100%;
+        border: none;
+    }
+
+    .faq-answer {
+        padding: 1rem 0 0 0;
+    }
+}

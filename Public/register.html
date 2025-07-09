@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+ 
+  <!-- All The required classes -->
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .nav-link:not(:last-child)::after {
+      content: '|';
+      margin-left: 8px;
+      margin-right: 8px;
+      color: black;
+    }
+    .login-container {
+      background-color: #C6DEF1;
+      border: 4px solid #FCD34D;
+      box-shadow: 0 4px 6px -1px rgba(251, 191, 36, 0.5), 
+                  0 2px 4px -1px rgba(251, 191, 36, 0.5);
+      border-radius: 20px;
+    }
+    .login-input {
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      padding: 8px 10px;
+      font-size: 14px;
+      width: 100%;
+      background-color: white;
+    }
+    .login-label {
+      font-size: 14px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .toggle-button {
+      background-color: #fbbf24;
+      color: black;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 8px 0;
+      border-radius: 40px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .signup-button {
+      background-color: #fbbf24;
+      color: black;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 10px 0;
+      border-radius: 40px;
+      width: 100%;
+      text-align: center;
+      margin-top: 16px;
+    }
+     .header-bg {
+      background-color: #cce6ff;
+    }
+    footer {
+      background-color: #cce6ff;
+      padding: 40px 5%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      font-size: 0.95rem;
+      color: #1f2937;
+    }
+    .footer-section h4 {
+      font-weight: 600;
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+    .footer-section p, .footer-section a {
+      color: #374151;
+      text-decoration: none;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .footer-section em {
+      display: block;
+      margin-top: 8px;
+      color: #555;
+    }
+    .footer-section.contact p {
+      font-style: italic;
+    }
+    .social-icons {
+      margin-top: 12px;
+    }
+    .social-icons span {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+    .social-icons a {
+      margin-right: 10px;
+      display: inline-block;
+      background-color: transparent;
+    }
+    .social-icons img {
+      width: 28px;
+      height: 28px;
+      filter: grayscale(100%);
+    }
+    .google-btn {
+      transition: all 0.3s ease;
+    }
+    .google-btn:hover {
+      background-color: #f1f1f1;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .google-btn:hover img {
+      transform: scale(1.1);
+    }
+    .google-btn img {
+      transition: transform 0.3s ease;
+    }
+    .flag-btn {
+      transition: all 0.3s ease;
+      padding: 2px;
+      border-radius: 4px;
+    }
+    .flag-btn:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .flag-btn:hover img {
+      transform: scale(1.05);
+    }
+    .flag-btn img {
+      transition: transform 0.3s ease;
+    }
+    .name-fields {
+      display: flex;
+      gap: 12px;
+    }
+    .name-field {
+      flex: 1;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="header-bg py-4 px-6 flex justify-between items-center">
+    <h1 class="text-lg font-bold text-black">Global Public Speaking Club</h1>
+    <nav class="flex items-center text-sm font-semibold text-black">
+      <a href="#" class="nav-link hover:underline">Home</a>
+      <a href="#" class="nav-link hover:underline">About</a>
+      <a href="#" class="nav-link hover:underline">Activities</a>
+      <a href="#" class="nav-link hover:underline">Resources</a>
+      <a href="#" class="nav-link hover:underline">Community</a>
+      <button class="flag-btn ml-3">
+        <img src="https://flagcdn.com/w40/us.png" alt="US Flag" class="w-6 h-4" />
+      </button>
+    </nav>
+  </header>
+
+  <!-- Sign Up Box -->
+ <main class="flex justify-center items-center min-h-[80vh] mt-1">
+    <div class="login-container px-10 py-4 w-[360px]">
+      <button class="toggle-button hover:bg-yellow-500">
+        Sign up | Log in
+      </button>
+
+      <form class="space-y-1">
+        <div class="name-fields">
+          <div class="name-field">
+            <label class="login-label">First Name</label>
+            <input type="text" placeholder="First Name" class="login-input" />
+          </div>
+          <div class="name-field">
+            <label class="login-label">Last Name</label>
+            <input type="text" placeholder="Last Name" class="login-input" />
+          </div>
+        </div>
+        
+        <div>
+          <label class="login-label">Email</label>
+          <input type="email" placeholder="Username@gmail.com" class="login-input" />
+        </div>
+        
+        <div>
+          <label class="login-label">Password</label>
+          <input type="password" placeholder="Password" class="login-input" />
+        </div>
+        
+        <div>
+          <label class="login-label">Confirm Password</label>
+          <input type="password" placeholder="Password" class="login-input" />
+        </div>
+        
+        <button type="submit" class="signup-button hover:bg-yellow-500">
+          Sign up
+        </button>
+      </form>
+
+      <div class="my-4 text-center text-sm text-gray-600 font-semibold">or continue with</div>
+      <button class="google-btn bg-white border border-gray-300 rounded px-3 py-2 w-full flex items-center justify-center gap-2 hover:border-gray-400">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-4 h-4" alt="Google logo" />
+        <span>Google</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+ <footer>
+    <div class="footer-section">
+      <h4>Global Public Speaking Club</h4>
+      <em>Empowering voices. Connecting the world.</em>
+      <img class="logo" src="https://i.imghippo.com/files/pwO2415cdc.png" alt="GPS Club Logo">
+    </div>
+    <div class="footer-section" style="text-align:center;">
+      <h4>Quick Links</h4>
+      <a href="#">About</a>
+      <a href="#">Activities</a>
+      <a href="#">Resources</a>
+      <a href="#">Community</a>
+    </div>
+
+    <div class="footer-section contact">
+      <h4>Contact Us</h4>
+      <p>Email: support@gpsclub.org</p>
+      <p>Location: 26 Voice Tower, Innovation Park,<br>Dubai Knowledge Village, UAE</p>
+      <p>Phone: +971 4 123 4567</p>
+      <p>Support Hours: Sunday – Thursday, 9:00 AM – 5:00 PM</p>
+      <div class="social-icons">
+        <span>Stay Connected</span>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
